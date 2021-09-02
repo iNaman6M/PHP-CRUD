@@ -46,7 +46,11 @@ include 'header.php';
     </table>
 
     <?php 
+        }else{
+            echo "<h2>No Record Found</h2>";
         }
+
+        mysqli_close($conn);
     ?>
 
 </div>
